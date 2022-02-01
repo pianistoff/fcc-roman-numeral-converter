@@ -38,8 +38,8 @@ function convertToRoman(num) {
   }
 
 function convert(number) {
-const result = document.getElementById("result");
-result.textContent = convertToRoman(number);
+    const result = document.getElementById("result");
+    result.textContent = convertToRoman(number);
 }
 
 const input = document.getElementById("input");

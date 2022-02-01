@@ -37,10 +37,10 @@ function convertToRoman(num) {
     return arrFinal.join('');
   }
 
-  function convert(number) {
-    const result = document.getElementById("result");
-    result.textContent = convertToRoman(number);
-  }
+function convert(number) {
+const result = document.getElementById("result");
+result.textContent = convertToRoman(number);
+}
 
 const input = document.getElementById("input");
 

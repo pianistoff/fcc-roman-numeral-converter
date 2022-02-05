@@ -1,7 +1,3 @@
-parent {
-  position: relative;
-}
-
 .child {
   position: absolute;
   left: 50%;
@@ -10,16 +6,14 @@ parent {
 }
 
 input {
-  width: 376.8px;
   border: 1px solid black;
 }
 
 button {
   display: block;
   background-color: white;
-  border: 1px solid black;
+  border: 1px soliwidth: 376.8px;d black;
   margin: 0 auto;
-  width: 376.8px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 10px;

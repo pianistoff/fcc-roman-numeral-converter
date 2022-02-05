@@ -1,4 +1,13 @@
+const header = document.getElementById("header");
+const input = document.getElementById("input");
+const button = document.getElementById("button");
+const result = document.getElementById("result");
+
 function convertToRoman(num) {
+    if (num < 1 || num > 3999) {
+        result.style.color = "red";
+        return "Enter an integer between 1 and 3999";
+    }
     const arrDigits = Array.from(String(num), Number);
     const arrFinal = [];
     const arrSymbols = ["I", "V", "X", "L", "C", "D", "M"];
@@ -39,15 +48,14 @@ function convertToRoman(num) {
             case 9:
                 arrFinal.push(arrSymbols[j] + arrSymbols[j + 2]);
                 break;
+            default:
+                result.style.color = "red";
+                return "Enter an integer between 1 and 3999";
         }
     }
+    result.style.color = "black";
     return arrFinal.join("");
 }
-
-const header = document.getElementById("header");
-const input = document.getElementById("input");
-const button = document.getElementById("button");
-const result = document.getElementById("result");
 
 function convert(number) {
     result.textContent = convertToRoman(number);

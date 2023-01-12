@@ -14,6 +14,9 @@ function convertToRoman(num) {
     for (let i = 0; i < arrDigits.length; i++) {
         let j = (arrDigits.length - 1 - i) * 2;
         switch (arrDigits[i]) {
+            case 0:
+                arrFinal.push('');
+                break;
             case 1:
                 arrFinal.push(arrSymbols[j]);
                 break;
@@ -50,7 +53,7 @@ function convertToRoman(num) {
                 break;
             default:
                 result.style.color = "red";
-                return "Enter an integer between 1 and 3999";
+                return "We are sorry. An error occured.";
         }
     }
     result.style.color = "black";

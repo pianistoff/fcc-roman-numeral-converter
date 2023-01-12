@@ -53,7 +53,7 @@ function convertToRoman(num) {
                 break;
             default:
                 result.style.color = "red";
-                return "We are sorry. An error occured.";
+                return "Enter an integer between 1 and 3999";
         }
     }
     result.style.color = "black";
